@@ -1,0 +1,79 @@
+from state import Observation
+from utils import Range, HandType
+from math import sqrt
+
+
+class Bot:
+    def get_name(self):
+        return "Dani"
+
+    # def get_hand_percentage(self, obs: Observation):
+    #     my_hand = obs.my_hand
+    #     if Range("33+, A2s+, K2s+, Q4s+, J6s+, T7s+, 97s+, 87s, A3o+, K7o+, Q8o+, J9o+, T9o").is_hand_in_range(my_hand):  # 40%
+    #         if Range("55+, A3s+, K7s+, Q8s+, J9s+, T9s, A9o+, KTo+, QJo").is_hand_in_range(my_hand):  # 20%
+    #             if Range("77+, A9s+, KTs+, QJs, AJo+, KQo").is_hand_in_range(my_hand):  # 10%
+    #                 if Range("99+, AJs+, KQs, AKo").is_hand_in_range(my_hand):  # 5%
+    #                     return 5
+    #                 return 10
+    #             if Range("66+, A5s+, K9s+, Q9s+, JTs, ATo+, KJo+").is_hand_in_range(my_hand):  # 15%
+    #                 return 15
+    #             return 20
+    #         if Range("44+, A2s+, K2s+, Q6s+, J7s+, T7s+, 98s, A7o+, K9o+, Q9o+, JTo").is_hand_in_range(my_hand):  # 30%
+    #             if Range("55+, A2s+, K5s+, Q8s+, J8s+, T9s, A8o+, K9o+, QTo+, JTo").is_hand_in_range(my_hand):  # 25%
+    #                 return 25
+    #             return 30
+    #         if Range("33+, A2s+, K2s+, Q4s+, J7s+, T7s+, 97s+, 87s, A5o+, K9o+, Q9o+, J8o+").is_hand_in_range(my_hand):  # 35%
+    #             return 35
+    #         return 40
+    #     return 100
+
+    def get_hand_percentage(self, obs: Observation):
+        my_hand = obs.my_hand
+        if Range("33+, A2s+, K2s+, Q4s+, J6s+, T7s+, 97s+, 87s, A3o+, K7o+, Q8o+, J9o+, T9o").is_hand_in_range(my_hand):  # 40%
+            if Range("55+, A3s+, K7s+, Q8s+, J9s+, T9s, A9o+, KTo+, QJo").is_hand_in_range(my_hand):  # 20%
+                if Range("77+, A9s+, KTs+, QJs, AJo+, KQo").is_hand_in_range(my_hand):  # 10%
+                    if Range("99+, AJs+, KQs, AKo").is_hand_in_range(my_hand):  # 5%
+                        if Range("TT+").is_hand_in_range(my_hand):  # 2.5%
+                            return 2.5
+                        return 5
+                    if Range("88+, ATs+, KTs+, QJs, AQo+").is_hand_in_range(my_hand):  # 7.5%
+                        return 7.5
+                    return 10
+                if Range("66+, A5s+, K9s+, Q9s+, JTs, ATo+, KJo+").is_hand_in_range(my_hand):  # 15%
+                    if Range("77+, A7s+, K9s+, QTs+, JTs, ATo+, KQo").is_hand_in_range(my_hand):  # 12.5%
+                        return 12.5
+                    return 15
+                if Range("66+, A4s+, K8s+, Q9s+, J9s+, ATo+, KTo+, QJo").is_hand_in_range(my_hand):  # 17.5%
+                    return 17.5
+                return 20
+
+            if Range("44+, A2s+, K2s+, Q6s+, J7s+, T7s+, 98s, A7o+, K9o+, Q9o+, JTo").is_hand_in_range(my_hand):  # 30%
+                if Range("55+, A2s+, K5s+, Q8s+, J8s+, T9s, A8o+, K9o+, QTo+, JTo").is_hand_in_range(my_hand):  # 25%
+                    if Range("55+, A2s+, K6s+, Q8s+, J9s+, T9s, A9o+, KTo+, QTo+, JTo").is_hand_in_range(my_hand):  # 22.5%
+                        return 22.5
+                    return 25
+                if Range("44+, A2s+, K4s+, Q7s+, J8s+, T8s+, 98s, A7o+, K9o+, QTo+, JTo").is_hand_in_range(my_hand):  # 27.5%
+                    return 27.5
+                return 30
+            if Range("33+, A2s+, K2s+, Q4s+, J7s+, T7s+, 97s+, 87s, A5o+, K9o+, Q9o+, J8o+").is_hand_in_range(my_hand):  # 35%
+                if Range("44+, A2s+, K2s+, Q5s+, J7s+, T7s+, 98s, A5o+, K9o+, Q9o+, JTo").is_hand_in_range(my_hand):  # 32.5%
+                    return 32.5
+                return 35
+            if Range("33+, A2s+, K2s+, Q4s+, J6s+, T7s+, 97s+, 87s, A4o+, K8o+, Q9o+, J9o+, T9o").is_hand_in_range(my_hand):  # 37.5%
+                return 37.5
+            return 40
+        return 100
+
+    def act(self, obs: Observation):
+        if obs.get_my_hand_type() > HandType.PAIR and obs.get_my_hand_type().value > obs.get_board_hand_type().value + 1:
+            return obs.get_max_raise()
+        hand_percentage = self.get_hand_percentage(obs)
+        if obs.get_max_spent() <= (-0.3 * hand_percentage + 15) * obs.big_blind:
+            if obs.current_round == 0 and hand_percentage <= 15:
+                return obs.get_min_raise()
+            return 1
+
+        if 0 in obs.legal_actions:
+            return 0
+        else:
+            return 1

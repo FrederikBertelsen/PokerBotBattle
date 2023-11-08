@@ -35,6 +35,13 @@
 - LookingForJobOpportunities
 
 # Stats
+<img src="Images/Top3Table.png" width="750">
+<img src="Images/WinTable.png" width="750">
+<img src="Images/SuperTable.png" width="750">
+<img src="Images/HighTable.png" width="750">
+<img src="Images/MidTable.png" width="750">
+<img src="Images/LowTable.png" width="750">
+
 ### Stat explanation
 - W = Win %
 - T3 = Top 3 %

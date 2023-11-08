@@ -74,9 +74,16 @@ def run_benchmark_with_analysis(bots, run_count, stacksize=1000):
 
     percent = (run_count / 100)
 
-    for i in range(len(data)):
-        d = data[i]
-        d['T3'] = (d['1'] + d['2'] + d['3']) / percent
+    if len(bots) <= 2:
+        for i in range(len(data)):
+            d = data[i]
+            d['T3'] = 0
+        data.sort(key=lambda x: x['W'], reverse=True)
+    else:
+        for i in range(len(data)):
+            d = data[i]
+            d['T3'] = (d['1'] + d['2'] + d['3']) / percent
+        data.sort(key=lambda x: x['T3'], reverse=True)
 
     data.sort(key=lambda x: x['T3'], reverse=True)
 

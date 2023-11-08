@@ -25,17 +25,21 @@ import Hercules
 import Hermes
 import GiveMeAJob
 import Hellmuth
+import nissemand
 
-bot_to_test = Dani
+bot_to_test = nissemand
+
+# 1 vs 1
+bots = [nissemand, Dani]
 
 # high board
-bots = [Simply, botimus, simple, example_bot, bot_to_test, over_3, EMIL, old_bot, EMIL_pair, fish_bot]
+#bots = [Simply, botimus, simple, example_bot, bot_to_test, over_3, EMIL, old_bot, EMIL_pair, fish_bot]
 # mid board
-# bots = [bot_to_test, randombot, old_bot, callBot, over_3, EMIL, knockoutbot, fish_bot, botimus, bluff_bot]
+#bots = [bot_to_test, randombot, old_bot, callBot, over_3, EMIL, knockoutbot, fish_bot, botimus, bluff_bot]
 # low board
-# bots = [bot_to_test, randombot, fish_bot, old_bot, knockoutbot2, bluff_bot, callBot, randombot2, knockoutbot, bluff_bot2]
+#bots = [bot_to_test, randombot, fish_bot, old_bot, knockoutbot2, bluff_bot, callBot, randombot2, knockoutbot, bluff_bot2]
 # super board
-# bots = [simple, Hercules, bot_to_test, UnfairAdvantage, GiveMeAJob, Simply, Hermes]
+#bots = [simple, Hercules, bot_to_test, UnfairAdvantage, GiveMeAJob, Simply, Hermes]
 
 
 games = 5000  # Change this variable for a different number of test runs

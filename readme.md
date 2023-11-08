@@ -1,4 +1,16 @@
-## Improvements
+# SpicyOverlord's upgraded Poker Bot Battle
+## play ranking
+0. DANI !!!!!
+1. NewBot
+2. Hermes
+3. good_bot
+4. GiveMeAJob
+5. Hercules
+6. BOTIMUS PRIME
+7. Nissemand
+8. Simple
+
+### Improvements
 - call functionality from good_bot
 - get hand eval in %
 - risk function
@@ -12,7 +24,7 @@
 - -0.4 * hand_percentage + 14 = max bb amount for call
 
 
-# possible names
+### possible names
 - Hercules
 - Kevin
 - Unfair Advantage
@@ -22,19 +34,8 @@
 - Statistics Always Wins
 - LookingForJobOpportunities
 
-
-# play ranking
-0. DANI !!!!!
-1. NewBot
-2. Hermes
-3. good_bot
-4. GiveMeAJob
-5. Hercules
-6. BOTIMUS PRIME
-7. Nissemand
-8. Simple
-
-# Stat explanation
+# Stats
+### Stat explanation
 - W = Win %
 - T3 = Top 3 %
 - AP = Average placement

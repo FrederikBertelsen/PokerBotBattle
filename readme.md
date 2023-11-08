@@ -13,14 +13,15 @@
 
 
 # possible names
-- LookingForJobOpportunities
 - Hercules
+- Kevin
 - Unfair Advantage
+- Hellmuth
 - Negreanu's Dream
 - Negreanu's Nightmare
-- Hellmuth
 - Statistics Always Wins
-- Kevin
+- LookingForJobOpportunities
+
 
 # play ranking
 0. DANI !!!!!

@@ -74,7 +74,7 @@ def run_benchmark_with_analysis(bots, run_count, stacksize=1000):
 
     percent = (run_count / 100)
 
-    if len(bots) <= 2:
+    if len(bots) <= 3:
         for i in range(len(data)):
             d = data[i]
             d['T3'] = 0

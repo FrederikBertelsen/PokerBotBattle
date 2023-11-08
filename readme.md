@@ -23,13 +23,14 @@ Statistics Always Wins
 Kevin
 
 # play ranking
-0. DANI!!!!!
+0. DANI !!!!!
 1. NewBot
 2. Hermes
 3. good_bot
 4. GiveMeAJob
 5. Hercules
 6. BOTIMUS PRIME
+7. Nissemand
 
 # info
 W = Win %

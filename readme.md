@@ -1,6 +1,6 @@
 # SpicyOverlord's upgraded Poker Bot Battle
-This is an upgraded version of the ITU Poker Bot Battle scripts.\
-This also contains my own bots and their play analysis.
+This is an upgraded version of the ITU Poker Bot Battle scripts with extended statistical logging.\
+This also contains my own bots and their play statistics and analysis.
 ## Strength rankings
 1. Dani
 1. NewBot
@@ -9,7 +9,7 @@ This also contains my own bots and their play analysis.
 1. GiveMeAJob
 1. Hercules
 1. BOTIMUS PRIME
-1. Nissemand
+1. Nissemand (previous winner 2023)
 1. Simple
 
 ### Improvements & thoughts
@@ -142,7 +142,7 @@ This also contains my own bots and their play analysis.
 > Low Table:\
 > W:23.967  T:66.8  AP:3.095 TF:99.922 AF:66.852 - 24.0 27.5 15.3 11.5 9.5  4.6 2.5 1.8 1.6 1.7
 
-## Nissemand
+## Nissemand (previous winner 2023)
 > Super Table:\
 > W:0.26  T3:1.18  AP:6.691  TF:31.204  AF:3.782 - 0.3 0.4 0.5 1.4 3.9 13.4 80.2\
 > High Table:\

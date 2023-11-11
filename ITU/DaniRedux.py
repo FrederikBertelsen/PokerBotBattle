@@ -1,7 +1,5 @@
 from state import Observation
 from utils import Range, HandType
-from math import sqrt
-
 
 class Bot:
     def get_name(self):

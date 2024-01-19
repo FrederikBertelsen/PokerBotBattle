@@ -67,6 +67,7 @@ class Bot:
     def act(self, obs: Observation):
         if obs.get_my_hand_type() > HandType.PAIR and obs.get_my_hand_type().value > obs.get_board_hand_type().value + 1:
             return obs.get_max_raise()
+
         hand_percentage = self.get_hand_percentage(obs)
         if obs.get_max_spent() <= (-0.3 * hand_percentage + 15) * obs.big_blind:
             if obs.current_round == 0 and hand_percentage <= 15:

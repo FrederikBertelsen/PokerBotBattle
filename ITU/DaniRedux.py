@@ -28,8 +28,7 @@ class Bot:
         return 100
 
     def max_call_function(self, obs: Observation, hand_percentage: int):
-        # return (-0.35 * hand_percentage + 15) * obs.big_blind
-        return (-0.4 * hand_percentage + 14) * obs.big_blind
+        return (-0.3 * hand_percentage + 15) * obs.big_blind
 
     def act(self, obs: Observation):
         if obs.get_my_hand_type() > HandType.PAIR and obs.get_my_hand_type().value > obs.get_board_hand_type().value + 1:

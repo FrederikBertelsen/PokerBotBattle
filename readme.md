@@ -49,7 +49,7 @@ This also contains my own bots and their play statistics and analysis.
 - T3 = Top 3 %
 - AP = Average placement
 - TF = A score describing the *Fold count* to *Top 3 %* ratio. Basicly how few fold that where used to get into the top 3 (higher is better).
-- AF = Average folds per game
+- F = Average folds per game
 - after the "-" is placement % for each possible placement (fx: 1st to 10th)
 
 ## Dani

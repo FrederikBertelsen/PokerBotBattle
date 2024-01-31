@@ -8,6 +8,7 @@ import knockoutbot2
 import old_bot
 import randombot
 import randombot2
+import DaniRedux
 from runner import play_tournament_table
 import botimus
 import old_bot
@@ -39,7 +40,7 @@ import Hellmuth
 bot_to_test = Hellmuth
 other_bot_to_test = Hercules
 
-bots = [other_bot_to_test, botimus, simple, knockoutbot, bot_to_test, over_3, EMIL, example_bot, EMIL_pair, Simply]
+bots = [other_bot_to_test, botimus, DaniRedux, bot_to_test, over_3, EMIL, example_bot, EMIL_pair, Simply]
 bot_instances = [b.Bot() for b in bots]
 
 # data = [{'name': b.get_name(), 'wins': 0} for b in bot_instances]

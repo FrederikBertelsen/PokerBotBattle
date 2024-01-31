@@ -2,7 +2,8 @@
 This is an upgraded version of the ITU Poker Bot Battle scripts with extended statistical logging.\
 This also contains my own bots and their play statistics and analysis.
 ## Strength rankings
-1. Dani
+1. DaniRedux
+2. Dani
 1. NewBot
 1. Hermes
 1. good_bot
@@ -51,6 +52,16 @@ This also contains my own bots and their play statistics and analysis.
 - TF = A score describing the *Fold count* to *Top 3 %* ratio. Basicly how few fold that where used to get into the top 3 (higher is better).
 - F = Average folds per game
 - after the "-" is placement % for each possible placement (fx: 1st to 10th)
+
+## DaniRedux
+> Super Table:\
+> W:75.54  T3:84.82  AP:1.978  TF:88.893  F:95.418 - 75.5 6.8 2.5 1.8 1.4 2.7 3.6 5.7\
+> High Table:\
+> W:68.55  T3:80.35  AP:2.252  TF:79.959  F:100.489 - 68.5 8.2 3.6 2.4 3.5 4.2 4.0 2.5 1.8 1.3\
+> Mid Table:\
+> W:67.57  T3:84.96  AP:1.915  TF:91.079  F:93.281 - 67.6 10.9 6.5 4.2 4.0 3.5 2.2 1.0 0.2 0.0\
+> Low Table:\
+> W:27.73  T3:99.59  AP:1.836  TF:219.237  F:45.426 - 27.7 61.4 10.5 0.4 0.0 0.0 0.0 0.0 0.0 0.0
 
 ## Dani
 > Super Table:\

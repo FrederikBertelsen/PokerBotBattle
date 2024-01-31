@@ -31,11 +31,12 @@ import mobot
 
 bot_to_test = DaniRedux
 
-# 1 vs 1
-#bots = [bot_to_test, Dani]
+# bot_to_test = Hellmuth
+# other_bot_to_test = Hercules
+# bots = [other_bot_to_test, botimus, simple, DaniRedux, bot_to_test, over_3, EMIL, example_bot, EMIL_pair, Simply]
 
 # super board
-# bots = [DaniRedux, simple, Hercules, bot_to_test, UnfairAdvantage, GiveMeAJob, Simply, Hermes]
+# bots = [example_bot, simple, Hercules, bot_to_test, UnfairAdvantage, GiveMeAJob, Simply, Hermes]
 # high board
 # bots = [Simply, botimus, simple, example_bot, bot_to_test, over_3, EMIL, old_bot, EMIL_pair, fish_bot]
 # mid board

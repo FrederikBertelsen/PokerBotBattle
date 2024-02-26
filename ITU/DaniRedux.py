@@ -26,12 +26,6 @@ class Bot:
                     my_hand):  # 35%
                 return 35
             return 40
-        # if Range("22+, A2s+, K2s+, Q2s+, J2s+, T5s+, 96s+, 85s+, 75s+, 73s, A2o+, K5o+, Q7o+, J8o+, T8o+").is_hand_in_range(
-        #         my_hand):
-        #     if Range( "22+, A2s+, K2s+, Q2s+, J4s+, T6s+, 96s+, 86s+, 76s, A2o+, K7o+, Q8o+, J8o+, T9o").is_hand_in_range(
-        #             my_hand):
-        #         return 45
-        #     return 50
         return 100
 
     def max_call_function(self, obs: Observation, hand_percentage: int):
@@ -46,4 +40,5 @@ class Bot:
             if hand_percentage <= 30 or obs.current_round == 0 and hand_percentage <= 40:
                 return obs.get_min_raise()
             return 1
+
         return 0 if 0 in obs.legal_actions else 1

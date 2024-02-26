@@ -1,6 +1,7 @@
 # SpicyOverlord's upgraded Poker Bot Battle
-This is an upgraded version of the ITU Poker Bot Battle scripts with extended statistical logging.\
+This is an upgraded version of the ITU Poker Bot Battle 2023 scripts with extended statistical logging.\
 This also contains my own bots and their play statistics and analysis.
+
 ## Strength rankings
 1. DaniRedux
 2. Dani

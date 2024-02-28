@@ -37,7 +37,7 @@ class Bot:
 
         hand_percentage = self.get_hand_percentage(obs)
         if obs.get_max_spent() < self.max_call_function(obs, hand_percentage):
-            if hand_percentage <= 30 or obs.current_round == 0:
+            if hand_percentage <= 30:
                 return obs.get_min_raise()
             return 1
 

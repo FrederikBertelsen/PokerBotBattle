@@ -1,4 +1,4 @@
-# SpicyOverlord's upgraded Poker Bot Battle
+# My upgraded Poker Bot Battle
 This is an upgraded version of the ITU Poker Bot Battle 2023 scripts with extended statistical logging.\
 This also contains my own bots and their play statistics and analysis.
 

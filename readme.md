@@ -5,38 +5,14 @@ This also contains my own bots and their play statistics and analysis.
 ## Strength rankings
 1. DaniRedux
 2. Dani
-1. NewBot
-1. Hermes
-1. good_bot
-1. GiveMeAJob
-1. Hercules
-1. BOTIMUS PRIME
-1. Nissemand (previous winner 2023)
-1. Simple
-
-### Improvements & thoughts
-- call functionality from good_bot
-- get hand eval in %
-- risk function
-- maybe use static variabled?
-- calc values in multiples of big_blind
-- read the game logs
-
-- look in the external bots folder
-- translate some of the bots that look good for testing
-
-- -0.4 * hand_percentage + 14 = max bb amount for call
-
-
-### Possible bot names
-- Hercules
-- Kevin
-- Unfair Advantage
-- Hellmuth
-- Negreanu's Dream
-- Negreanu's Nightmare
-- Statistics Always Wins
-- LookingForJobOpportunities
+3. NewBot
+4. Hermes
+5. good_bot
+6. GiveMeAJob
+7. Hercules
+8. BOTIMUS PRIME
+9. Nissemand (previous winner 2023)
+10. Simple
 
 # Stats
 <img src="Images/Top3Table.png" width="750">
